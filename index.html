@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"SF Pro Text"', 'Segoe UI', 'Tahoma', 'sans-serif'],
+                        roboto: ['"Roboto Condensed"', 'sans-serif'],
+                        sf: ['"SF Pro"', 'sans-serif'],
+                        sfDisplay: ['"SF Pro Display"', 'sans-serif'],
+                        sfText: ['"SF Pro Text"', 'sans-serif'],
+                        sfRounded: ['"SF Pro Rounded"', 'sans-serif'],
+                        hkWide: ['"HK Grotesk Wide"', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="font-sans m-0 p-0 box-border">
+
+    <div class="navbar flex bg-black justify-between items-center px-[20px] py-[10px]">
+        <div class="logo w-[65px] h-[34px] rounded-full">
+            <img class="w-full h-full object-contain" src="./assests/asian_logo1.png" alt="Asian Logo">
+        </div>
+        <div class="search flex justify-center items-center gap-[25px] text-[15px] font-extralight text-white">
+            <img src="./assests/fi-rr-search.png" alt="">
+            <img src="./assests/Vector.png" alt="">
+        </div>
+    </div>
+
+    <div
+        class="hero grid grid-rows-2 items-center gap-5 text-white h-[95vh] bg-[url('./assests/herobg.jpg')] bg-cover bg-center">
+        <div class="hero-text flex flex-col justify-center items-center px-[70px] py-[20px]">
+            <div class="flex flex-col items-center justify-center gap-[10px]">
+               <span class="text-[12px]  font-[400] spacing-[56%] tracking-[6px] font-sfDisplay">INTRODUCING</span>
+                <h1 class="text-[22px] spacing-[-2%] font-[800] items-center justify-center flex flex-col  ">The Global Series
+                    <p class="text-[12px] spacing-[-2%] font-normal font-[400] font-sfDisplay ">The most premium footwear range</p>
+                </h1>
+            </div>
+           
+            <button
+                class="explore-button text-[12px] leading-[20px] tracking-[0.05em] font-[700] font-hkWide bg-[#0071D9] flex items-center gap-2.5 px-[18px] py-[6px] border-none rounded-[5px] text-white cursor-pointer mt-[13px]">
+                EXPLORE RANGE <img src="./assests/arrow_forward_ios.png " alt="">
+            </button>
+        </div>
+    </div>
+
+    <div class="under-hero p-5">
+        <div>
+            <p class="built-different text-[12px] font-sf font-light text-[#2A2A36B2] tracking-[2px] spacing-[20%]">BUILT DIFFERENT</p>
+            <p class="text-[38px] font-[700] font-roboto flex flex-col p-0">MEETS <span>FUNCTION</span></p>
+            <!-- <p class="text-[38px] font-[700] font-roboto"></p> -->
+            <p class="under-description text-[12px] font-sfDisplay font-normal text-[#2A2A3699] spacing-[2%]">
+                This sneaker is for people already in motion. Already doing the work. Already on the road in the city,
+                inside the day. They don't announce confidence. They operate with it.
+            </p>
+        </div>
+        <div class="box-container grid grid-cols-2 gap-5 py-5">
+            <div class="box-box border border-[#0000000D] rounded-[10px] p-2 gap-[15px]">
+                <img src="./assests/bolt (1).png" alt="">
+                <div class="box-content">
+                    <h2 class=" font-[700] text-[16px] spacing-[-2%] font-roboto">LIGHTWEIGHT SOLE</h2>
+                    <p class="text-xs font-normal text-[#a5a5a5] font-sfDisplay">40% lighter than conventional foam compounds</p>
+                </div>
+            </div>
+            <div class="box-box border border-[#0000000D] rounded-[10px] p-2 gap-[15px]">
+                <img src="./assests/bolt (2).png" alt="">
+                <div class="box-content">
+                    <h2 class=" font-[700] text-[16px] spacing-[-2%] font-roboto">MEMORY FOAM</h2>
+                    <p class="text-xs font-normal text-[#a5a5a5] font-sfDisplay">Memory foam moulds to your foot over time</p>
+                </div>
+            </div>
+            <div class="box-box border border-[#0000000D] rounded-[10px] p-2 gap-[15px]">
+                <img src="./assests/bolt (3).png" alt="">
+                <div class="box-content">
+                    <h2 class=" font-[700] text-[16px] spacing-[-2%] font-roboto">BREATHABLE MESH</h2>
+                    <p class="text-xs font-normal text-[#a5a5a5] font-sfDisplay">Micro-perforated upper for max airflow</p>
+                </div>
+            </div>
+            <div class="box-box border border-[#0000000D] rounded-[10px] p-2 gap-[15px]">
+                <img src="./assests/bolt (4).png" alt="">
+                <div class="box-content">
+                    <h2 class=" font-[700] text-[16px] spacing-[-2%] font-roboto">ANTI-SLIP GRIP</h2>
+                    <p class="text-xs font-normal text-[#a5a5a5] font-sfDisplay">Hexagonal rubber outsole for any surface</p>
+                </div>
+            </div>
+            <div class="box-box border border-[#0000000D] rounded-[10px] p-2 gap-[15px]">
+                <img src="./assests/bolt (5).png" alt="">
+                <div class="box-content">
+                    <h2 class=" font-[700] text-[16px] spacing-[-2%] font-roboto">SHOCK ABSORPTION</h2>
+                    <p class="text-xs font-normal text-[#a5a5a5] font-sfDisplay">Triple-density midsole cushions every step.</p>
+                </div>
+            </div>
+            <div class="box-box border border-[#0000000D] rounded-[10px] p-2 gap-[15px]">
+                <img src="./assests/bolt (6).png" alt="">
+                <div class="box-content">
+                    <h2 class=" font-[700] text-[16px] spacing-[-2%] font-roboto">FLEXIBLE FIT</h2>
+                    <p class="text-xs font-normal text-[#a5a5a5] font-sfDisplay">360° stretch zones adapt as you move.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="offer-section relative p-5">
+        <div class="offer-carousel overflow-hidden w-full pt-[14px] mt-[-4px]">
+            <div class="offer-track flex transition-transform duration-500 [transition-timing-function:ease-in-out]"
+                id="offerTrack"></div>
+        </div>
+        <div class="offer-dots flex justify-center items-center gap-1.5 mt-3" id="offerDots"></div>
+    </div>
+
+    <!-- EDITOR'S PICK — horizontal scroll product slider -->
+    <section class="editor-section p-5">
+
+        <div class="editor-section-header mb-4">
+            <span class="drop-title text-xs tracking-[3px] text-[#777] block mb-1 font-sf">FEATURED DROP</span>
+            <h1 class="editor-title text-[38px] leading-[0.9] font-bold text-[#2A2A36] font-roboto">EDITOR'S<br>PICK</h1>
+            <p class="editor-desc mt-2.5 text-[#666] text-xs font-sfDisplay">The shoe the internet can't stop talking about.</p>
+        </div>
+
+        <div class="product-slider-wrap relative">
+            <button
+                class="slider-btn prev font-sans hidden md:flex absolute top-1/2 -translate-y-1/2 left-[-14px] w-10 h-10 items-center justify-center border-none rounded-full bg-black/55 text-white text-[18px] cursor-pointer z-10">&#10094;</button>
+
+            <!-- Dynamic products render here via JS -->
+            <div class="product-slider flex gap-[15px] overflow-x-auto overscroll-x-contain scroll-smooth snap-x snap-mandatory touch-pan-x pr-5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden pb-1"
+                id="productSlider"></div>
+
+            <button
+                class="slider-btn next font-sans hidden md:flex absolute top-1/2 -translate-y-1/2 right-[-14px] w-10 h-10 items-center justify-center border-none rounded-full bg-black/55 text-white text-[18px] cursor-pointer z-10">&#10095;</button>
+        </div>
+
+    </section>
+
+
+    <div class="socialmedia">
+        <section class="social-section p-5">
+            <div class="social-section-header mb-4">
+                <span class="drop-title text-xs tracking-[3px] text-[#777] block mb-1 font-sf">SOCIAL MEDIA</span>
+                <h1 class="social-title text-[38px] leading-[0.9] font-bold text-[#2A2A36] font-roboto">FIND YOUR<br>STYLE</h1>
+                <p class="social-desc mt-2.5 text-[#666] text-xs font-sfDisplay">Pick your style, Watch the videos...</p>
+            </div>
+
+            <div class="product-slider-wrap relative">
+                <button
+                    class="slider-btn prev font-sans hidden md:flex absolute top-1/2 -translate-y-1/2 left-[-14px] w-10 h-10 items-center justify-center border-none rounded-full bg-black/55 text-white text-[18px] cursor-pointer z-10">&#10094;</button>
+                <div class="social-slider flex gap-4 overflow-x-auto overscroll-x-contain scroll-smooth snap-x snap-mandatory touch-pan-x pr-5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden pb-1"
+                    id="socialSlider"></div>
+                <button
+                    class="slider-btn next font-sans hidden md:flex absolute top-1/2 -translate-y-1/2 right-[-14px] w-10 h-10 items-center justify-center border-none rounded-full bg-black/55 text-white text-[18px] cursor-pointer z-10">&#10095;</button>
+            </div>
+        </section>
+    </div>
+
+    <section class="confidence-section p-5">
+        <div class="confidence-header mb-4">
+            <span class="drop-title text-xs tracking-[3px] text-[#777] block mb-1 font-sf">WHY ASIAN</span>
+            <h1 class="confidence-title text-[38px] leading-[0.9] font-bold text-[#1A2B4B] font-roboto">BUY WITH<br>CONFIDENCE</h1>
+            <p class="confidence-desc mt-2.5 text-[#0071D9] text-[13px] font-medium font-sfDisplay">We stand behind every pair we make.
+            </p>
+        </div>
+
+        <div class="confidence-grid grid grid-cols-2 gap-3 mb-4">
+            <div class="confidence-card border border-[#EEEEEE] rounded-[14px] py-3.5 px-3 bg-white">
+                <div
+                    class="confidence-icon w-11 h-11 rounded-[10px] bg-[radial-gradient(circle,_#216CA8_5%,_#1C2A6A_100%)] flex items-center justify-center text-white text-lg mb-2.5">
+                    <i class="fa-solid fa-truck-fast"></i>
+                </div>
+                <h3 class="text-[13px] font-bold text-[#1A2B4B] mb-1 font-sfDisplay">FREE SHIPPING</h3>
+                <p class="text-[11px] text-[#757575] leading-[1.4] font-sfDisplay">On all orders above ₹999 across India</p>
+            </div>
+            <div class="confidence-card border border-[#EEEEEE] rounded-[14px] py-3.5 px-3 bg-white">
+                <div
+                    class="confidence-icon w-11 h-11 rounded-[10px] bg-[radial-gradient(circle,_#216CA8_5%,_#1C2A6A_100%)] flex items-center justify-center text-white text-lg mb-2.5">
+                    <i class="fa-solid fa-rotate-left"></i>
+                </div>
+                <h3 class="text-[13px] font-bold text-[#1A2B4B] mb-1 font-sfDisplay">EASY RETURNS</h3>
+                <p class="text-[11px] text-[#757575] leading-[1.4] font-sfDisplay">30-day hassle-free return policy</p>
+            </div>
+            <div class="confidence-card border border-[#EEEEEE] rounded-[14px] py-3.5 px-3 bg-white">
+                <div
+                    class="confidence-icon w-11 h-11 rounded-[10px] bg-[radial-gradient(circle,_#216CA8_5%,_#1C2A6A_100%)] flex items-center justify-center text-white text-lg mb-2.5">
+                    <i class="fa-solid fa-award"></i>
+                </div>
+                <h3 class="text-[13px] font-bold text-[#1A2B4B] mb-1 font-sfDisplay">1 YEAR WARRANTY</h3>
+                <p class="text-[11px] text-[#757575] leading-[1.4] font-sfDisplay">Manufacturing defects covered, always</p>
+            </div>
+            <div class="confidence-card border border-[#EEEEEE] rounded-[14px] py-3.5 px-3 bg-white">
+                <div
+                    class="confidence-icon w-11 h-11 rounded-[10px] bg-[radial-gradient(circle,_#216CA8_5%,_#1C2A6A_100%)] flex items-center justify-center text-white text-lg mb-2.5">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <h3 class="text-[13px] font-bold text-[#1A2B4B] mb-1 font-sfDisplay">SECURE PAYMENT</h3>
+                <p class="text-[11px] text-[#757575] leading-[1.4] font-sfDisplay">256-bit encrypted checkout</p>
+            </div>
+        </div>
+
+        <div
+            class="confidence-banner flex items-center justify-between gap-3 bg-[linear-gradient(135deg,_#1a3a6e_0%,_#0d1b35_100%)] rounded-2xl pt-[18px] pr-4 pb-[18px] pl-5 overflow-hidden min-h-[122px] max-[340px]:flex-col max-[340px]:text-center">
+            <div class="confidence-banner-text flex-1 min-w-0">
+                <h2 class="text-[44px] font-extrabold text-white leading-none mb-1.5 font-roboto">10 CR+</h2>
+                <p
+                    class="confidence-banner-label text-[11px] font-semibold text-white uppercase tracking-[0.4px] leading-[1.35] m-0 font-sfDisplay">
+                    HAPPY CUSTOMERS</p>
+                <p
+                    class="confidence-banner-label text-[11px] font-semibold text-white uppercase tracking-[0.4px] leading-[1.35] m-0 font-sfDisplay">
+                    &amp; COUNTING</p>
+            </div>
+            <img src="./assests/ce67a9397b41dff84323812239ff1a6ca9efe83e.png" alt="Happy customers"
+                class="confidence-banner-img w-[177px] h-[122px] object-contain flex-shrink-0 max-[340px]:w-40 max-[340px]:h-auto">
+        </div>
+    </section>
+
+
+    <footer class="footer bg-black text-white p-0">
+        <div class="footer-container flex flex-col md:grid md:grid-cols-2">
+
+            <div class="footer-logo text-center px-4 py-6 border-b border-[#333] md:col-span-2">
+                <img class="w-[140px] mb-4 mx-auto font-sf"
+                    src="https://cdn.asianlive.in/digital-website/asian-wave-white_12156424250444176950.png?tr=w-200,h-100"
+                    alt="Asian logo">
+                <p class="text-xs text-white leading-[1.6] max-w-[320px] mx-auto mt-0 mb-0">Asian is one of the fastest
+                    growing and the most loved footwear brands in India. Check out our incredible range and become an
+                    Asian Rider today.</p>
+            </div>
+
+            <div class="footer-box px-4 py-5 border-b border-[#333] text-left">
+                <h3 class="text-sm font-bold uppercase tracking-[0.5px] flex items-center gap-2.5 mb-4 font-sf">GET IN TOUCH
+                </h3>
+                <div class="item flex items-start gap-3 text-xs mb-3.5 text-white leading-[1.5] last:mb-0">
+                    <span
+                        class="support-icon inline-flex items-center justify-center w-[22px] h-[22px] border-[1.5px] border-white rounded-full text-[9px] font-bold flex-shrink-0">24</span>
+                    <span class="font-sf">Support: <a class="text-white underline font-sf"
+                            href="mailto:info@asianfootwears.com">info@asianfootwears.com</a></span>
+                </div>
+                <div class="item flex items-start gap-3 text-xs mb-3.5 text-white leading-[1.5] last:mb-0">
+                    <i class="fa-solid fa-store"></i>
+                    <span>Corporate/Bulk orders: <a class="text-white underline" href="tel:+919996027231">+91
+                            999-602-7231</a></span>
+                </div>
+                <div class="item flex items-start gap-3 text-xs mb-3.5 text-white leading-[1.5] last:mb-0">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>For order/refunds related issues: <a class="text-white underline" href="tel:+917561000092">+91
+                            756-100-0092</a></span>
+                </div>
+            </div>
+
+            <div class="footer-box px-4 py-5 border-b border-[#333] text-left">
+                <h3 class="text-sm font-bold uppercase tracking-[0.5px] flex items-center gap-2.5 mb-4"><i
+                        class="fa-solid fa-bookmark font-sf"></i> SOCIAL</h3>
+                <div class="social flex gap-5">
+                    <a class="text-white text-xl" href="#" aria-label="LinkedIn"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a class="text-white text-xl" href="#" aria-label="Instagram"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a class="text-white text-xl" href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a class="text-white text-xl" href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-box px-4 py-5 border-b border-[#333] text-left">
+                <h3 class="text-sm font-bold uppercase tracking-[0.5px] flex items-center gap-2.5 mb-4"><i
+                        class="fa-solid fa-link font-sf"></i> QUICK LINKS</h3>
+                <ul class="list-none font-sf">
+                    <li class="mb-2.5 last:mb-0"><a class="text-white no-underline text-xs uppercase tracking-[0.3px]"
+                            href="#">HOME</a></li>
+                    <li class="mb-2.5 last:mb-0"><a class="text-white no-underline text-xs uppercase tracking-[0.3px]"
+                            href="#">STORE LOCATOR</a></li>
+                    <li class="mb-2.5 last:mb-0"><a class="text-white no-underline text-xs uppercase tracking-[0.3px]"
+                            href="#">MY ACCOUNT</a></li>
+                    <li class="mb-2.5 last:mb-0"><a class="text-white no-underline text-xs uppercase tracking-[0.3px]"
+                            href="#">CORPORATE/BULK ORDERS</a></li>
+                    <li class="mb-2.5 last:mb-0"><a class="text-white no-underline text-xs uppercase tracking-[0.3px]"
+                            href="#">TRACK MY ORDER</a></li>
+                    <li class="mb-2.5 last:mb-0"><a class="text-white no-underline text-xs uppercase tracking-[0.3px]"
+                            href="#">BLOGS</a></li>
+                    <li class="mb-2.5 last:mb-0"><a class="text-white no-underline text-xs uppercase tracking-[0.3px]"
+                            href="#">CONTACT US</a></li>
+                    <li class="mb-2.5 last:mb-0"><a class="text-white no-underline text-xs uppercase tracking-[0.3px]"
+                            href="#">PRIVACY POLICY</a></li>
+                    <li class="mb-2.5 last:mb-0"><a class="text-white no-underline text-xs uppercase tracking-[0.3px]"
+                            href="#">REFUND POLICY</a></li>
+                    <li class="mb-2.5 last:mb-0"><a class="text-white no-underline text-xs uppercase tracking-[0.3px]"
+                            href="#">SHIPPING POLICY</a></li>
+                    <li class="mb-2.5 last:mb-0"><a class="text-white no-underline text-xs uppercase tracking-[0.3px]"
+                            href="#">TERMS OF SERVICE</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box footer-box--last px-4 py-5 border-b-0 text-left">
+                <h3 class="text-sm font-bold uppercase tracking-[0.5px] flex items-center gap-2.5 mb-4"><i
+                        class="fa-solid fa-location-dot"></i> ADDRESS</h3>
+                <p class="text-xs text-white leading-[1.6]">J-20, Udhyog Nagar, Peeragarhi, Delhi, New Delhi 110041</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+
+        /* ── Dynamic product data ─────────────────────────────
+           Replace / fetch this array from your API or CMS.
+           Each object maps to one card in the slider.
+        ──────────────────────────────────────────────────── */
+        const products = [
+            {
+                name: 'POWER PLAY 01',
+                subtitle: 'Premium Running Shoes.',
+                image: './assests/shoe1.png',
+                colors: [
+                    { image: './assests/shoe1.png', alt: 'Green' },
+                    { image: './assests/off_shoes.png', alt: 'Navy' },
+                    { image: './assests/Component 11.png', alt: 'Tan' },
+                    { image: './assests/shoe1.png', alt: 'Black' }
+                ],
+                price: '₹1199',
+                oldPrice: '₹1599',
+                discount: '25% OFF',
+                rating: '4.2',
+                reviews: 32,
+                badge: 'Limited Stock',
+                wishlist: true
+            },
+            {
+                name: 'POWER PLAY 02',
+                subtitle: 'Premium Running Shoes.',
+                image: './assests/shoe1.png',
+                colors: [
+                    { image: './assests/shoe1.png', alt: 'Green' },
+                    { image: './assests/off_shoes.png', alt: 'Navy' },
+                    { image: './assests/Component 11.png', alt: 'Tan' },
+                    { image: './assests/shoe1.png', alt: 'Black' }
+                ],
+                price: '₹1299',
+                oldPrice: '₹1799',
+                discount: '30% OFF',
+                rating: '4.5',
+                reviews: 40,
+                badge: 'Limited Stock',
+                wishlist: true
+            },
+            {
+                name: 'ZORO 01',
+                subtitle: 'Adventure Shoes.',
+                image: './assests/off_shoes.png',
+                colors: [
+                    { image: './assests/off_shoes.png', alt: 'Brown' },
+                    { image: './assests/shoe1.png', alt: 'Black' },
+                    { image: './assests/Component 11.png', alt: 'Grey' }
+                ],
+                price: '₹1399',
+                oldPrice: null,
+                discount: null,
+                rating: '4.3',
+                reviews: 18,
+                badge: null,
+                wishlist: false
+            },
+            {
+                name: 'ZORO 02',
+                subtitle: 'Adventure Shoes.',
+                image: './assests/off_shoes.png',
+                colors: [
+                    { image: './assests/off_shoes.png', alt: 'Brown' },
+                    { image: './assests/shoe1.png', alt: 'Black' }
+                ],
+                price: '₹1499',
+                oldPrice: null,
+                discount: null,
+                rating: '4.1',
+                reviews: 22,
+                badge: null,
+                wishlist: false
+            },
+            {
+                name: 'GLOBAL PRO',
+                subtitle: 'Lifestyle Sneakers.',
+                image: './assests/shoe1.png',
+                colors: [
+                    { image: './assests/shoe1.png', alt: 'White' },
+                    { image: './assests/Component 11.png', alt: 'Grey' },
+                    { image: './assests/off_shoes.png', alt: 'Navy' }
+                ],
+                price: '₹1599',
+                oldPrice: '₹1999',
+                discount: '20% OFF',
+                rating: '4.6',
+                reviews: 55,
+                badge: 'New',
+                wishlist: true
+            },
+            {
+                name: 'TRAIL KING',
+                subtitle: 'Outdoor Shoes.',
+                image: './assests/Component 11.png',
+                colors: [
+                    { image: './assests/Component 11.png', alt: 'Olive' },
+                    { image: './assests/shoe1.png', alt: 'Black' },
+                    { image: './assests/off_shoes.png', alt: 'Brown' }
+                ],
+                price: '₹1699',
+                oldPrice: null,
+                discount: null,
+                rating: '4.4',
+                reviews: 30,
+                badge: null,
+                wishlist: false
+            }
+        ];
+
+        /* Tailwind utility strings reused across dynamically-rendered cards */
+        const COLOR_THUMB_BASE = 'color-thumb w-12 h-12 p-1 border-2 rounded-lg bg-[#F8F8F8] cursor-pointer overflow-hidden [font:inherit]';
+        const COLOR_THUMB_INACTIVE_BORDER = 'border-[#E5E5E5]';
+        const COLOR_THUMB_ACTIVE_BORDER = 'border-[#2F6EEA]';
+
+        /* ── Render cards ─────────────────────────────────── */
+        function renderProducts(data) {
+            const slider = document.getElementById('productSlider');
+            slider.innerHTML = '';
+
+            data.forEach(p => {
+                const card = document.createElement('div');
+                card.className = 'product-card relative border border-[#E5E5E5] rounded-lg p-3 bg-white flex-[0_0_240px] w-[240px] max-md:flex-[0_0_calc(100%-2.5rem)] max-md:w-[calc(100%-2.5rem)] snap-start flex-shrink-0';
+
+                const colors = p.colors || [{ image: p.image, alt: p.name }];
+                const mainImage = colors[0].image;
+
+                card.innerHTML = `
+                    ${p.badge ? `<div class="badge absolute top-2.5 left-0 bg-[#224E8D] text-white px-2 py-[5px] text-[11px] font-semibold">${p.badge}</div>` : ''}
+                    ${p.wishlist ? `<button class="wishlist font-sans absolute right-2.5 top-2.5 w-[30px] h-[30px] border-none rounded-lg bg-[#F2F2F2] text-[#777] cursor-pointer" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>` : ''}
+                    <div class="product-image text-center mt-9">
+                        <img class="main-shoe-img w-full max-w-[180px] object-contain" src="${mainImage}" alt="${p.name}">
+                    </div>
+                    <div class="color-thumbnails flex gap-2 justify-center mt-2.5 mb-3">
+                        ${colors.map((c, i) => `
+                            <button class="${COLOR_THUMB_BASE} ${i === 0 ? COLOR_THUMB_ACTIVE_BORDER : COLOR_THUMB_INACTIVE_BORDER} font-sans" data-image="${c.image}" aria-label="${c.alt}">
+                                <img class="w-full h-full object-contain" src="${c.image}" alt="${c.alt}">
+                            </button>
+                        `).join('')}
+                    </div>
+                    <div class="brand text-[10px] font-bold text-[#2F6EEA] uppercase mt-1 font-sfDisplay">ASIAN FOOTWEAR</div>
+                    <div class="product-info-row flex justify-between items-start gap-2 mt-1">
+                        <div class="product-info-left flex-1 min-w-0">
+                            <h3 class="text-xl font-extrabold text-[#22263D] leading-[1.1] font-roboto">${p.name}</h3>
+                            <div class="sub-title text-xs text-[#777] mt-0.5 font-sfDisplay">${p.subtitle}</div>
+                        </div>
+                        ${p.rating ? `
+                            <div class="rating flex items-center gap-1 whitespace-nowrap text-[#444] text-xs mt-1">
+                                <span class="star-icon w-[18px] h-[18px] bg-[#2F6EEA] rounded-full text-white text-[9px] flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-star"></i></span>
+                                ${p.rating} <span>| ${p.reviews}</span>
+                            </div>
+                        ` : ''}
+                    </div>
+                    <div class="price-row flex justify-between items-center mt-2">
+                        <div>
+                            <span class="price text-[22px] font-extrabold text-[#22263D] font-roboto">${p.price}</span>
+                            ${p.oldPrice ? `<span class="mrp text-xs text-[#999] line-through ml-1.5 font-normal font-sfDisplay">MRP ${p.oldPrice}</span>` : ''}
+                        </div>
+                        ${p.discount ? `<span class="discount bg-white border border-[#22A35A] text-[#22A35A] text-[11px] font-bold px-2 py-1 rounded-md font-roboto">${p.discount}</span>` : ''}
+                    </div>
+                `;
+
+                card.querySelectorAll('.color-thumb').forEach(thumb => {
+                    thumb.addEventListener('click', () => {
+                        card.querySelector('.main-shoe-img').src = thumb.dataset.image;
+                        card.querySelectorAll('.color-thumb').forEach(t => {
+                            t.classList.remove(COLOR_THUMB_ACTIVE_BORDER);
+                            t.classList.add(COLOR_THUMB_INACTIVE_BORDER);
+                        });
+                        thumb.classList.remove(COLOR_THUMB_INACTIVE_BORDER);
+                        thumb.classList.add(COLOR_THUMB_ACTIVE_BORDER);
+                    });
+                });
+
+                slider.appendChild(card);
+            });
+        }
+
+        renderProducts(products);
+
+        /* ── Social media video data ──────────────────────── */
+        const socialVideos = [
+            {
+                thumb: './assests/886a544a55adbcd379b5abf220d19688c3504b82.png',
+                name: 'POWER PLAY 01',
+                subtitle: 'Premium Running Shoes.',
+                price: '₹1199',
+                oldPrice: '1599',
+                discount: '25% OFF',
+                rating: '4.2',
+                reviews: 32
+            },
+            {
+                thumb: './assests/886a544a55adbcd379b5abf220d19688c3504b82.png',
+                name: 'POWER PLAY 02',
+                subtitle: 'Premium Running Shoes.',
+                price: '₹1299',
+                oldPrice: '1799',
+                discount: '30% OFF',
+                rating: '4.5',
+                reviews: 40
+            },
+            {
+                thumb: './assests/886a544a55adbcd379b5abf220d19688c3504b82.png',
+                name: 'ZORO 01',
+                subtitle: 'Adventure Shoes.',
+                price: '₹1399',
+                oldPrice: null,
+                discount: null,
+                rating: '4.3',
+                reviews: 18
+            },
+            {
+                thumb: './assests/886a544a55adbcd379b5abf220d19688c3504b82.png',
+                name: 'GLOBAL PRO',
+                subtitle: 'Lifestyle Sneakers.',
+                price: '₹1599',
+                oldPrice: '1999',
+                discount: '20% OFF',
+                rating: '4.6',
+                reviews: 55
+            },
+            {
+                thumb: './assests/886a544a55adbcd379b5abf220d19688c3504b82.png',
+                name: 'TRAIL KING',
+                subtitle: 'Outdoor Shoes.',
+                price: '₹1699',
+                oldPrice: null,
+                discount: null,
+                rating: '4.4',
+                reviews: 30
+            }
+        ];
+
+        function renderSocialVideos(data) {
+            const slider = document.getElementById('socialSlider');
+            slider.innerHTML = '';
+
+            data.forEach(v => {
+                const card = document.createElement('div');
+                card.className = 'social-card relative flex-[0_0_210px] w-[210px] max-w-[210px] max-md:flex-[0_0_calc(100%-2.5rem)] max-md:w-[calc(100%-2.5rem)] max-md:max-w-none h-[400px] rounded-[22px] overflow-hidden cursor-pointer snap-start flex-shrink-0';
+
+                card.innerHTML = `
+                    <img class="thumb absolute inset-0 w-full h-full object-cover block" src="${v.thumb}" alt="${v.name}">
+                    <button class="social-play font-sans absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-transparent border-2 border-white/90 flex items-center justify-center text-sm text-white z-[2] cursor-pointer pl-[3px]" aria-label="Play video">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <div class="social-card-footer absolute bottom-0 left-0 right-0 z-[1] px-3.5 pt-10 pb-4 bg-[linear-gradient(transparent,_rgba(0,0,0,0.88))] text-white">
+                        <div class="brand text-[10px] font-bold text-[#2F6EEA] uppercase m-0 font-sfDisplay ">ASIAN FOOTWEAR</div>
+                        <div class="social-info-row flex justify-between items-start gap-2 mt-0.5">
+                            <h3 class="text-lg font-extrabold text-white leading-[1.1] flex-1 min-w-0 font-roboto">${v.name}</h3>
+                            ${v.rating ? `
+                                <div class="rating flex items-center gap-1 text-white text-xs whitespace-nowrap flex-shrink-0">
+                                    <span class="star-icon w-[18px] h-[18px] bg-[#2F6EEA] rounded-full text-white text-[9px] flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-star"></i></span>
+                                    ${v.rating} <span>| ${v.reviews}</span>
+                                </div>
+                            ` : ''}
+                        </div>
+                        <div class="sub-title text-[11px] text-white/75 mt-0.5 font-sfDisplay">${v.subtitle}</div>
+                        <div class="price-row flex justify-between items-center mt-2">
+                            <div>
+                                <span class="price text-lg font-extrabold text-white font-roboto">${v.price}</span>
+                                ${v.oldPrice ? `<span class="mrp text-[11px] text-white/50 line-through ml-1.5 font-normal font-sfDisplay">MRP ₹ ${v.oldPrice}</span>` : ''}
+                            </div>
+                            ${v.discount ? `<span class="discount bg-[#D4F5E2] border-none text-[#1A7A45] text-[11px] font-bold px-2 py-1 rounded-md font-roboto">${v.discount}</span>` : ''}
+                        </div>
+                    </div>
+                `;
+
+                slider.appendChild(card);
+            });
+        }
+
+        renderSocialVideos(socialVideos);
+
+        /* ── Reusable slider init (desktop arrows + mouse drag; mobile uses native scroll + snap) ── */
+        function initSlider(wrap) {
+            const slider = wrap.querySelector('[class*="-slider"]');
+            const prevBtn = wrap.querySelector('.slider-btn.prev');
+            const nextBtn = wrap.querySelector('.slider-btn.next');
+
+            const scrollStep = () => {
+                const card = slider.firstElementChild;
+                if (!card) return 255;
+                const gap = parseFloat(getComputedStyle(slider).gap) || 0;
+                return card.offsetWidth + gap;
+            };
+
+            prevBtn.addEventListener('click', () => {
+                slider.scrollBy({ left: -scrollStep(), behavior: 'smooth' });
+            });
+
+            nextBtn.addEventListener('click', () => {
+                slider.scrollBy({ left: scrollStep(), behavior: 'smooth' });
+            });
+
+            let isDown = false;
+            let startX;
+            let scrollLeft;
+
+            slider.addEventListener('mousedown', (e) => {
+                isDown = true;
+                slider.style.cursor = 'grabbing';
+                startX = e.pageX - slider.offsetLeft;
+                scrollLeft = slider.scrollLeft;
+            });
+
+            document.addEventListener('mouseup', () => {
+                isDown = false;
+                slider.style.cursor = 'grab';
+            });
+
+            slider.addEventListener('mousemove', (e) => {
+                if (!isDown) return;
+                e.preventDefault();
+                const x = e.pageX - slider.offsetLeft;
+                slider.scrollLeft = scrollLeft - (x - startX);
+            });
+
+            slider.style.cursor = 'grab';
+        }
+
+        initSlider(document.querySelector('.editor-section .product-slider-wrap'));
+        initSlider(document.querySelector('.social-section .product-slider-wrap'));
+
+        /* ── Featured product carousel ────────────────────── */
+        const offerSlides = [
+            { name: 'ZORO 01', desc: 'Premium Adventure Shoes', image: './assests/off_shoes.png' },
+            { name: 'ZORO 02', desc: 'Premium Adventure Shoes', image: './assests/off_shoes.png' },
+            { name: 'ZORO 03', desc: 'Premium Running Shoes', image: './assests/shoe1.png' }
+        ];
+
+        function createOfferSlide(slide) {
+            const el = document.createElement('div');
+            el.className = 'offer-slide relative flex-[0_0_100%] w-full';
+            el.innerHTML = `
+                <div class="offer-main grid grid-cols-[60%_40%] gap-5 p-2.5 border border-[#2A2A361A] rounded-[10px]">
+                    <div class="offer-left py-2.5">
+                        <h6 class="text-[#0071D9] font-semibold text-xs font-sfDisplay">FEATURED PRODUCT</h6>
+                        <h1 class="font-bold text-[42px] font-roboto">${slide.name}</h1>
+                        <p class="font-sfDisplay">${slide.desc}</p>
+                        <button class="shopnowbtn font-roboto bg-[#0071D9] px-5 py-2.5 border-none rounded text-white cursor-pointer mt-2.5">SHOP NOW <i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+                    <div class="offer-right flex items-center justify-center">
+                        <img class="w-full h-full object-contain" src="${slide.image}" alt="${slide.name}">
+                    </div>
+                </div>
+                <img src="./assests/Frame 4765.png" class="offbadge absolute -top-2.5 right-1.5 z-[2]" alt="15% OFF">
+            `;
+            return el;
+        }
+
+        const OFFER_DOT_BASE = 'offer-dot h-1.5 rounded-full transition-all duration-300 [transition-timing-function:ease] cursor-pointer';
+
+        (function initOfferCarousel() {
+            const carousel = document.querySelector('.offer-carousel');
+            const track = document.getElementById('offerTrack');
+            const dotsContainer = document.getElementById('offerDots');
+            const total = offerSlides.length;
+
+            offerSlides.forEach(() => {
+                const dot = document.createElement('span');
+                dot.className = `${OFFER_DOT_BASE} w-1.5 bg-[#ccc]`;
+                dotsContainer.appendChild(dot);
+            });
+            const dots = dotsContainer.querySelectorAll('.offer-dot');
+
+            offerSlides.forEach(slide => track.appendChild(createOfferSlide(slide)));
+            track.appendChild(createOfferSlide(offerSlides[0]));
+
+            let current = 0;
+            let autoTimer;
+
+            function goTo(index, animate = true) {
+                track.style.transition = animate ? 'transform 0.5s ease-in-out' : 'none';
+                track.style.transform = `translateX(-${index * carousel.offsetWidth}px)`;
+
+                const dotIndex = index % total;
+                dots.forEach((dot, i) => {
+                    const active = i === dotIndex;
+                    dot.className = `${OFFER_DOT_BASE} ${active ? 'w-[22px] rounded-[4px] bg-[#888]' : 'w-1.5 bg-[#ccc]'}`;
+                });
+            }
+
+            function nextSlide() {
+                current++;
+                goTo(current);
+
+                if (current === total) {
+                    track.addEventListener('transitionend', function handler(e) {
+                        if (e.propertyName !== 'transform') return;
+                        track.removeEventListener('transitionend', handler);
+                        current = 0;
+                        goTo(0, false);
+                    });
+                }
+            }
+
+            function startAuto() {
+                autoTimer = setInterval(nextSlide, 4000);
+            }
+
+            function resetAuto() {
+                clearInterval(autoTimer);
+                startAuto();
+            }
+
+            dots.forEach((dot, i) => {
+                dot.addEventListener('click', () => {
+                    current = i;
+                    goTo(current);
+                    resetAuto();
+                });
+            });
+
+            window.addEventListener('resize', () => goTo(current, false));
+
+            goTo(0, false);
+            startAuto();
+        })();
+
+    </script>
+
+</body>
+
+</html>
