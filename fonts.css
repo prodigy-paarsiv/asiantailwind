@@ -18,10 +18,59 @@
 }
 
 /* HK Grotesk Wide — download from Behance and place in assests/fonts/ */
+/* HK Grotesk Wide */
 @font-face {
     font-family: "HK Grotesk Wide";
-    src: url("./assests/fonts/hk-grotesk-wide-bold-opentype.otf") format("opentype");
+    src: url("./assests/hk-grotesk-wide-font-family/hkgroteskwide-light.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "HK Grotesk Wide";
+    src: url("./assests/hk-grotesk-wide-font-family/hkgroteskwide-regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "HK Grotesk Wide";
+    src: url("./assests/hk-grotesk-wide-font-family/hkgroteskwide-medium.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "HK Grotesk Wide";
+    src: url("./assests/hk-grotesk-wide-font-family/hkgroteskwide-semibold.otf") format("opentype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "HK Grotesk Wide";
+    src: url("./assests/hk-grotesk-wide-font-family/hkgroteskwide-bold.otf") format("opentype");
     font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "HK Grotesk Wide";
+    src: url("./assests/hk-grotesk-wide-font-family/hkgroteskwide-extrabold.otf") format("opentype");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "HK Grotesk Wide";
+    src: url("./assests/hk-grotesk-wide-font-family/hkgroteskwide-black.otf") format("opentype");
+    font-weight: 900;
     font-style: normal;
     font-display: swap;
 }
